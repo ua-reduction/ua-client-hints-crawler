@@ -1,0 +1,4 @@
+SELECT distinct origin, experimental.popularity.rank
+FROM `chrome-ux-report.all.202303`
+WHERE experimental.popularity.rank <= 1000000
+ORDER BY experimental.popularity.rank, origin

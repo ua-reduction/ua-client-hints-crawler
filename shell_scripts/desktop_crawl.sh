@@ -1,0 +1,1 @@
+npm run crawl -- -i urls/crux/crux_fqdn_top_100k_202304_without_rank.csv -o ./data/ -v -f -d "fingerprints,requests,cookies,screenshots,ch_delegation" --reporters 'cli,file' -l ./data/ --autoconsent-action "optIn" -c 14
