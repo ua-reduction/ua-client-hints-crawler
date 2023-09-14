@@ -1,4 +1,4 @@
-Unveiling the Impact of User-Agent Reduction and Client Hints: A Measurement Study (WPES'23)
+## Unveiling the Impact of User-Agent Reduction and Client Hints: A Measurement Study (WPES'23)
 
 This repository contains the code for our paper titled [_Unveiling the Impact of User-Agent Reduction and Client Hints: A Measurement Study_](https://homes.esat.kuleuven.be/~asenol/ua-reduction/user_agent_reduction_wpes_23.pdf).
 
