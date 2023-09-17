@@ -12,6 +12,7 @@ JavaScript API accesses, HTTP requests & responses, cookies, and other data rela
 the relevant object’s getters to intercept the function calls.
 
 To run crawler you can execute this command after installing npm packages.
+
 ```npm run crawl -- -u 'https://www.twitter.com/login' -o ./data/ -v -f -d "fingerprints,requests,cookies,screenshots,ch_delegation" --reporters 'cli,file' -l ./data/```
 
 ### Data
