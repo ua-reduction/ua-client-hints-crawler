@@ -21,22 +21,3 @@ The data from ten crawls performed in June'23 is available for download from thi
 **Code**: https://github.com/asumansenol/ua-reduction/notebooks
 
 You can find the Jupyter notebooks, pickles and CSVs that are used in the [analysis folder](https://github.com/asumansenol/ua-reduction/notebooks).
-
-# UA reduction
-UA Freeze/redaction + User Agent Client Hints
-### Information about the spec
-
-- **Spec Title**: User-Agent Client Hints
-- **Spec URL**: https://wicg.github.io/ua-client-hints/
-- **GitHub repository**: https://github.com/WICG/ua-client-hints
-- **Delegation**: https://github.com/WICG/client-hints-infrastructure/tree/main#cross-origin-hint-delegation
-- **Infrastructure/mechanisms**: https://github.com/WICG/client-hints-infrastructure#readme
-- **UA Reduction Trial**: https://developer.chrome.com/blog/user-agent-reduction-deprecation-trial/
-- **Migrate-to-ua-ch**: https://web.dev/migrate-to-ua-ch/
-- 
-### Demo page
-- https://user-agent-client-hints.glitch.me/
-
-## Standard discussions:
-- WebKit: https://github.com/WebKit/standards-positions/issues/70
-- Mozilla: https://mozilla.github.io/standards-positions/#ua-client-hints
