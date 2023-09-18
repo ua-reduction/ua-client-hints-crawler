@@ -11,7 +11,9 @@ We extended DuckDuckGo’s [Tracker Radar Collector](https://github.com/duckduck
 JavaScript API accesses, HTTP requests & responses, cookies, and other data related to web measurements. Since TRC only saves a pre-defined list of HTTP headers, we extended its allow-list by adding the ten UA-CH HTTP headers such as Sec-CH-UA-Full-Version-List, Sec-CH-UA-Arch. For both getHighEntropyValues and fingerprinting detection, we override
 the relevant object’s getters to intercept the function calls.
 
-To run crawler you can execute this command after installing npm packages.
+To run crawler you can execute this command after installing npm packages by using 
+
+```npm i``` command.
 
 ```npm run crawl -- -u 'https://www.twitter.com/login' -o ./data/ -v -f -d "fingerprints,requests,cookies,screenshots,ch_delegation" --reporters 'cli,file' -l ./data/```
 
