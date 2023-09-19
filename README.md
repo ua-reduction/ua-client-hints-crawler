@@ -21,6 +21,6 @@ To run crawler you can execute this command after installing npm packages by usi
 The data from the crawl performed in June'23 is available for download from this [link](xxxxx).
 
 ### Analysis
-**Code**: https://github.com/asumansenol/ua-reduction/ua-reduction-crawler/notebooks
+**Code**: https://github.com/ua-reduction/ua-reduction-crawler/tree/main/analysis
 
 The data used in the analysis notebooks can be downloaded also from this [link](xxxxx).
