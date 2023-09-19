@@ -18,7 +18,7 @@ To run crawler you can execute this command after installing npm packages by usi
 ```npm run crawl -- -u 'https://www.twitter.com/login' -o ./data/ -v -f -d "fingerprints,requests,cookies,screenshots,ch_delegation" --reporters 'cli,file' -l ./data/```
 
 ### Data
-The data from ten crawls performed in June'23 is available for download from this [link](xxxxx).
+The data from the crawl performed in June'23 is available for download from this [link](xxxxx).
 
 ### Analysis
 **Code**: https://github.com/asumansenol/ua-reduction/ua-reduction-crawler/notebooks
