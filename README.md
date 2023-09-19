@@ -22,16 +22,15 @@ The data from the crawl performed in June'23 is available for download from this
 The data includes the following:
 
 - 100k_nyc_all_reqs.csv: Request and response details extracted from the crawl JSONs.
-- 100k_nyc_delegation_df.csv
-- 100k_nyc_leaky_reqs_with_hashes.csv
-- site_rank.txt
-- tracker_category.json
-- tracker_owner.json
-- 100k_nyc_api_calls.csv
-- 100k_nyc_fp_attempts.csv
-- category_domains.json
-- succeeded_hostnames.txt
-- tracker_owner_dict.json
+- 100k_nyc_delegation_df.csv: Information about websites where User-Agent Client Hints are delegated via HTML, obtained from the crawl JSON files.
+- 100k_nyc_leaky_reqs_with_hashes.csv: Request and response details where high-entropy hints are exfiltrated to a remote servers, created by using 100k_nyc_all_reqs.csv and leakDetector code published in this [repo](https://github.com/leaky-forms/leaky-forms/tree/main/leak-detector). This leak detection methodology is based on the approach outlined [by Englehardt et al](https://petsymposium.org/2018/files/papers/issue1/paper42-2018-1-source.pdf).
+- site_rank.txt: The ranking details associated with each visited website.
+- tracker_category.json: The category of the domains (exfiltrating or accesing the ua client hints) determined by using [DuckDuckGo's Tracker Radar repository](https://github.com/duckduckgo/tracker-radar/).
+- tracker_owner.json: The owner of the domains (exfiltrating or accesing the ua client hints) determined by using [DuckDuckGo's Tracker Radar repository](https://github.com/duckduckgo/tracker-radar/).
+- 100k_nyc_api_calls.csv: Comprehensive data related to browser APIs, including extracted details like return values and arguments, sourced from the crawl JSON files.
+- 100k_nyc_fp_attempts.csv: Detailed information about the browser APIs only used for browser fingerprinting. For the detection of browser fingerprinting we followed heuristics developed by [Iqbal et al](https://arxiv.org/pdf/2008.04480.pdf).
+- category_domains.json: The category of the domains (exfiltrating or accesing the ua client hints) determined by using [DuckDuckGo's Tracker Radar repository](https://github.com/duckduckgo/tracker-radar/).
+- succeeded_hostnames.txt: The list of URLs we succesfully visited.
 
 
 ### Analysis
