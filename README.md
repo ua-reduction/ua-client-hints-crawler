@@ -19,6 +19,20 @@ To run crawler you can execute this command after installing npm packages by usi
 
 ### Data
 The data from the crawl performed in June'23 is available for download from this [link](xxxxx).
+The data includes the following:
+
+- 100k_nyc_all_reqs.csv: Request and response details extracted from the crawl JSONs.
+- 100k_nyc_delegation_df.csv
+- 100k_nyc_leaky_reqs_with_hashes.csv
+- site_rank.txt
+- tracker_category.json
+- tracker_owner.json
+- 100k_nyc_api_calls.csv
+- 100k_nyc_fp_attempts.csv
+- category_domains.json
+- succeeded_hostnames.txt
+- tracker_owner_dict.json
+
 
 ### Analysis
 **Code**: https://github.com/ua-reduction/ua-reduction-crawler/tree/main/analysis
