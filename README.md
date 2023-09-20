@@ -18,8 +18,14 @@ To run crawler you can execute this command after installing npm packages by usi
 ```npm run crawl -- -u 'https://www.twitter.com/login' -o ./data/ -v -f -d "fingerprints,requests,cookies,screenshots,ch_delegation" --reporters 'cli,file' -l ./data/```
 
 ### Data
-The data from the crawl performed in June'23 is available for download from this [link](xxxxx).
-The data includes the following:
+#### Crawl data
+The data from the crawl performed in June'23 is available for download from this [link](xxxxx). For each visited website the crawler produces the following files:
+-  screenshot
+-  HTML source
+-  a JSON file that contains HTTP request and response details, cookies, JavaScript API calls, details of User-Agent Client Hint delegation or opt-in via HTML
+
+#### Auxiliary data
+The auxiliary data we use in the analysis includes the following:
 
 - 100k_nyc_all_reqs.csv: Request and response details extracted from the crawl JSONs.
 - 100k_nyc_delegation_df.csv: Information about websites where User-Agent Client Hints are delegated via HTML, obtained from the crawl JSON files.
