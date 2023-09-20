@@ -1,13 +1,22 @@
 ## Unveiling the Impact of User-Agent Reduction and Client Hints: A Measurement Study (WPES'23)
 
-This repository contains the code for our paper titled [_Unveiling the Impact of User-Agent Reduction and Client Hints: A Measurement Study_](https://homes.esat.kuleuven.be/~asenol/ua-reduction/user_agent_reduction_wpes_23.pdf).
+This repository contains the code for the paper titled [_Unveiling the Impact of User-Agent Reduction and Client Hints: A Measurement Study_](https://homes.esat.kuleuven.be/~asenol/ua-reduction/user_agent_reduction_wpes_23.pdf (to be presented at [WPES'23](https://www.wpes2023.conf.kth.se/)).
 
-We presented the first empirical study of the impact of user-agent string reduction and the introduction of high-entropy user-agent client hints in the Chrome browser.
+![UA-Reduction](https://github.com/ua-reduction/ua-reduction-crawler/assets/5788790/d0babe35-4540-4202-b13e-1e5d7752467b)
 
-For a more detailed overview please visit [the project's homepage](https://homes.esat.kuleuven.be/~asenol/ua-reduction).
+**Background:** Browsers including Chrome recently reduced the user-agent string to make it less identifying. Simultaneously, Chrome introduced several highly
+identifying (or high-entropy) the [user-agent client hints (UA-CH)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Client_hints#user-agent_client_hints) to allow access to browser properties that are redacted from the user-agent string. In this empirical study, we attempt to characterize the effects of these major changes through a large-scale web measurement on the top 100K websites. Using an instrumented crawler, we quantify access to high-entropy browser features through UA-CH HTTP headers and the JavaScript API (mainly the [`navigator.userAgentData.getHighEntropyValues`](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorUAData/getHighEntropyValues) method). We measure access
+delegation to third parties and investigate whether the new client hints are already used by tracking, advertising and browser fingerprinting scripts.
+
+We presented the first empirical study of the impact of user-agent string reduction and the introduction of high-entropy user-agent client hints in the Chrome browser. For a more detailed overview please visit [the project's homepage](https://homes.esat.kuleuven.be/~asenol/ua-reduction).
 
 ### Crawler
 We extended DuckDuckGo’s [Tracker Radar Collector](https://github.com/duckduckgo/tracker-radar-collector) to record HTTP headers, JavaScript API calls and HTML elements that can be used to access, opt-in or delegate User-Agent Client Hints.
+
+Our main modifications can be found in the following files:
+- https://github.com/ua-reduction/ua-reduction-crawler/blob/main/collectors/ClientHintDelegationCollector.js
+- https://github.com/ua-reduction/ua-reduction-crawler/blob/main/collectors/FingerprintCollector.js
+- https://github.com/ua-reduction/ua-reduction-crawler/blob/main/helpers/fingerprintDetection.js
 
 To run crawler, first clone this repo, install the required npm packages (`npm i`) and run the following command:
 
@@ -37,8 +46,6 @@ The auxiliary data we use in the analysis includes the following:
 
 ### Analysis
 **Code**: https://github.com/ua-reduction/ua-reduction-crawler/tree/main/analysis
-
-The data used in the analysis notebooks can be downloaded also from this [link](xxxxx).
 
 ### Reference
 ```
