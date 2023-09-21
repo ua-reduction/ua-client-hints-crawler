@@ -1,6 +1,6 @@
 ## Unveiling the Impact of User-Agent Reduction and Client Hints: A Measurement Study (WPES'23)
 
-This repository contains the code for the paper titled [_Unveiling the Impact of User-Agent Reduction and Client Hints: A Measurement Study_](https://homes.esat.kuleuven.be/~asenol/ua-reduction/user_agent_reduction_wpes_23.pdf (to be presented at [WPES'23](https://www.wpes2023.conf.kth.se/)).
+This repository contains the code for the paper titled [_Unveiling the Impact of User-Agent Reduction and Client Hints: A Measurement Study_](https://homes.esat.kuleuven.be/~asenol/ua-reduction/user_agent_reduction_wpes_23.pdf) (to be presented at [WPES'23](https://www.wpes2023.conf.kth.se/).
 ![UA-Reduction](https://github.com/ua-reduction/ua-client-hints-crawler/assets/5788790/d0babe35-4540-4202-b13e-1e5d7752467b)
 
 **Background:** Browsers including Chrome recently reduced the user-agent string to make it less identifying. Simultaneously, Chrome introduced several highly
