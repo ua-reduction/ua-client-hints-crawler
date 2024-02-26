@@ -49,11 +49,11 @@ The Jupyter notebooks used for the analyses can be found at https://github.com/u
 
 ### Reference
 ```
-@article{
-    author    = {Asuman Senol and Gunes Acar},
-    title     = {{Unveiling the Impact of User-Agent Reduction and Client Hints: A Measurement Study}},
-    booktitle = {Proceedings of the 22nd Workshop on Privacy in the Electronic Society},
-    year      = 2023,
-    month     = November
+@inproceedings{senol2023unveiling,
+  title={Unveiling the Impact of User-Agent Reduction and Client Hints: A Measurement Study},
+  author={Senol, Asuman and Acar, Gunes},
+  booktitle={Proceedings of the 22nd Workshop on Privacy in the Electronic Society},
+  pages={91--106},
+  year={2023}
 }
 ```
